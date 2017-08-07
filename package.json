@@ -1,0 +1,16 @@
+{
+  "name": "cdp-request-intercept",
+  "version": "0.0.0",
+  "description": "CDP request inteception https://bugs.chromium.org/p/chromium/issues/detail?id=752010",
+  "main": "index.js",
+  "author": "Boris Okunskiy",
+  "license": "MIT",
+  "dependencies": {
+    "chrome-connector": "^0.3.0",
+    "node-fetch": "^1.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.4.0",
+    "eslint-config-ub": "^2.0.0"
+  }
+}
