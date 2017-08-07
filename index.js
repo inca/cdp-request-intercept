@@ -16,14 +16,13 @@ async function main() {
         args: [
             '--remote-debugging-port=9222',
             '--no-first-run',
-            `--user-data-dir=${os.tmpdir()}/chrome-dir-123`,
+            `--user-data-dir=${os.tmpdir()}/chrome-test-${Math.random}`,
         ],
     });
     await chrome.start();
     const tab = await chrome.newTab();
     const cdp = new ChromeConnector(tab.webSocketDebuggerUrl);
     await cdp.connect();
-    console.log('Connected');
     cdp.on('Network.requestIntercepted', onRequestIntercepted);
     await cdp.sendCommand('Network.enable');
     await cdp.sendCommand('Network.setRequestInterceptionEnabled', {
