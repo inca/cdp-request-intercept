@@ -2,6 +2,8 @@ This is a test for reproducing [Devtools network interception does not work on m
 
 Note: only Mac OS X is affected
 
+[![Demo](https://i.ytimg.com/vi_webp/IqhRD5qU0EE/maxresdefault.webp)](https://www.youtube.com/watch?v=IqhRD5qU0EE)
+
 Usage:
 
 - Install Chrome Version 62.0.3178.0 (Official Build) canary (64-bit)

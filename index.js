@@ -16,7 +16,7 @@ async function main() {
         args: [
             '--remote-debugging-port=9222',
             '--no-first-run',
-            `--user-data-dir=${os.tmpdir()}/chrome-test-${Math.random}`,
+            `--user-data-dir=${os.tmpdir()}/chrome-test-${Math.random()}`,
         ],
     });
     await chrome.start();
